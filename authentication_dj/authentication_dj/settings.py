@@ -129,3 +129,5 @@ LOGIN_URL = '/accounts/login'
 
 LOGIN_REDIRECT_URL = '/auth_whatbytes/index/'
 LOGOUT_REDIRECT_URL = '/accounts/logout/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
