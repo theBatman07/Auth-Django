@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2 class="text-center mt-4">Welcome to Your Dashboard</h2>
+    <div class='d-flex justify-content-center mt-4'>
+        <a href="{% url 'profile' %}" class="btn btn-info me-2">Profile</a>
+        <a href="{% url 'password_change' %}" class="btn btn-primary">Change Password</a>
+    </div>
+{% endblock %}

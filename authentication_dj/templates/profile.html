@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2 class="text-center mt-4 mb-4">Your Profile Information</h2>
+    <div class='d-flex justify-content-center mt-4'>
+        <ul>
+            <li><strong>Username:</strong> {{ user.username }}</li>
+            <li><strong>Email:</strong> {{ user.email }}</li>
+            <li><strong>Date Joined:</strong> {{ user.date_joined }}</li>
+            <li><strong>Last Active:</strong> {{ user.last_login }}</li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <a href="{% url 'index' %}" class="btn btn-secondary">Back to Dashboard</a>
+    </div>    
+{% endblock %}
